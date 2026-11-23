@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Firmware updates - UARTee Documentation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar><p class="sidebar-heading">Documentation</p><nav><a href="index.html">Overview</a><a href="getting-started.html">Getting started</a><a href="wiring-safety.html">Wiring and safety</a><a href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a class="active" href="firmware-updates.html">Firmware updates</a><a href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a href="mcp-integration.html">MCP integration</a></nav><div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div></aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / Firmware updates</p><p class="eyebrow">05 / Update</p><h1>Firmware updates</h1><p class="lede">Use firmware only from a tested, compatible UARTee hardware revision.</p>
+      <article class="page-content">
+        <div class="notice"><strong>Before updating</strong>Disconnect UART targets, save configuration, and verify the exact board revision. A generic STM32 image is not guaranteed to support the matching enclosure or board.</div>
+        <h2>Release procedure</h2><p>Firmware releases will document the toolchain, target device, linker configuration, boot mode, option bytes, flashing command or utility, and verification steps.</p>
+        <h2>Compatibility</h2><ul><li>Check the supported hardware revisions listed in the firmware tag or release.</li><li>Do not mix firmware and hardware revisions without a compatibility test.</li><li>Do not flash build artifacts with missing source, license, or manifest information.</li><li>Confirm USB enumeration and every intended mode after recovery.</li></ul>
+      </article>
+      <nav class="page-nav"><a href="configuration.html"><span>Previous</span><strong>Configuration</strong></a><a href="troubleshooting.html"><span>Next</span><strong>Troubleshooting</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

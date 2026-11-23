@@ -6,6 +6,29 @@ Dual, Share, and Tap connection modes.
 UARTee is in development. This repository will publish only instructions that
 have been verified against the identified hardware and firmware revisions.
 
+The documentation is a static, no-build website. The entry page is
+`docs/index.html`; the root `index.html` redirects to it.
+
+## What is included
+
+- `index.html`: short redirect to the documentation landing page
+- `docs/index.html`: documentation overview and searchable section cards
+- `docs/styles.css`: shared responsive layout and design
+- `docs/script.js`: search and mobile sidebar behavior
+- `docs/*.html`: setup, safety, mode, configuration, update, troubleshooting,
+  specification, and optional integration pages
+- `.nojekyll`: prevents Jekyll processing on GitHub Pages
+
+## Preview locally
+
+Run a local server from this repository:
+
+```bash
+python3 -m http.server 8080 --bind 127.0.0.1
+```
+
+Open `http://127.0.0.1:8080/docs/`.
+
 ## Documentation structure
 
 The first documentation release will cover:

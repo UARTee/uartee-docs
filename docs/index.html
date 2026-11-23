@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="UARTee setup, wiring, configuration, firmware update, and troubleshooting documentation.">
+  <title>UARTee Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="UARTee documentation home">
+      <span class="brand-mark">U</span>
+      <span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span>
+    </a>
+    <div class="search-wrap">
+      <input type="search" placeholder="Search documentation" aria-label="Search documentation" data-doc-search>
+    </div>
+    <div class="top-actions">
+      <a href="https://github.com/UARTee">GitHub ↗</a>
+      <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-button>☰</button>
+    </div>
+  </header>
+
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar>
+      <p class="sidebar-heading">Documentation</p>
+      <nav aria-label="Documentation navigation">
+        <a class="active" href="./">Overview</a>
+        <a href="getting-started.html">Getting started</a>
+        <a href="wiring-safety.html">Wiring and safety</a>
+        <a href="connection-modes.html">Connection modes</a>
+        <a href="configuration.html">Configuration</a>
+        <a href="firmware-updates.html">Firmware updates</a>
+        <a href="troubleshooting.html">Troubleshooting</a>
+        <a href="specifications.html">Specifications</a>
+        <a href="mcp-integration.html">MCP integration</a>
+      </nav>
+      <div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div>
+    </aside>
+
+    <main class="content">
+      <p class="breadcrumb">UARTee / Documentation</p>
+      <p class="eyebrow">Getting connected</p>
+      <h1>UARTee documentation</h1>
+      <p class="lede">Practical setup, wiring, configuration, firmware, and troubleshooting guides for the UARTee USB-to-UART adapter.</p>
+
+      <section class="doc-grid" aria-label="Documentation sections">
+        <a class="doc-card" href="getting-started.html" data-search-card>
+          <div class="doc-card-top"><span>01 / START</span><span>→</span></div>
+          <div><h2>Getting started</h2><p>Supported hosts, package contents, and the first UART connection.</p></div>
+        </a>
+        <a class="doc-card" href="wiring-safety.html" data-search-card>
+          <div class="doc-card-top"><span>02 / SAFETY</span><span>→</span></div>
+          <div><h2>Wiring and safety</h2><p>Revision-specific pinouts, voltage limits, grounding, and power behavior.</p></div>
+        </a>
+        <a class="doc-card" href="connection-modes.html" data-search-card>
+          <div class="doc-card-top"><span>03 / MODES</span><span>→</span></div>
+          <div><h2>Connection modes</h2><p>Configure Dual, Share, and active Tap workflows.</p></div>
+        </a>
+        <a class="doc-card" href="configuration.html" data-search-card>
+          <div class="doc-card-top"><span>04 / CONFIG</span><span>→</span></div>
+          <div><h2>Configuration</h2><p>Enter configuration mode and recover known-good settings.</p></div>
+        </a>
+        <a class="doc-card" href="firmware-updates.html" data-search-card>
+          <div class="doc-card-top"><span>05 / UPDATE</span><span>→</span></div>
+          <div><h2>Firmware updates</h2><p>Check compatibility and use the supported update procedure.</p></div>
+        </a>
+        <a class="doc-card" href="troubleshooting.html" data-search-card>
+          <div class="doc-card-top"><span>06 / DIAGNOSE</span><span>→</span></div>
+          <div><h2>Troubleshooting</h2><p>Identify ports, ownership, missing data, and USB connection faults.</p></div>
+        </a>
+        <a class="doc-card" href="specifications.html" data-search-card>
+          <div class="doc-card-top"><span>07 / REFERENCE</span><span>→</span></div>
+          <div><h2>Specifications</h2><p>Measured limits and tested serial settings for a named revision.</p></div>
+        </a>
+        <a class="doc-card" href="mcp-integration.html" data-search-card>
+          <div class="doc-card-top"><span>08 / OPTIONAL</span><span>→</span></div>
+          <div><h2>MCP integration</h2><p>Optional host integration that does not replace regular serial tools.</p></div>
+        </a>
+      </section>
+      <p class="search-empty" data-search-empty>No matching documentation sections.</p>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

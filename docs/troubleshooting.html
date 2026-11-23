@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Troubleshooting - UARTee Documentation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar><p class="sidebar-heading">Documentation</p><nav><a href="index.html">Overview</a><a href="getting-started.html">Getting started</a><a href="wiring-safety.html">Wiring and safety</a><a href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a href="firmware-updates.html">Firmware updates</a><a class="active" href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a href="mcp-integration.html">MCP integration</a></nav><div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div></aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / Troubleshooting</p><p class="eyebrow">06 / Diagnose</p><h1>Troubleshooting</h1><p class="lede">Separate host enumeration, port ownership, wiring, firmware mode, and target configuration.</p>
+      <article class="page-content">
+        <h2>USB port is missing</h2><ul><li>Try a known-good data cable and USB port.</li><li>Check power and status indicators for the exact board revision.</li><li>Verify the firmware build enumerates as designed.</li><li>Review host logs rather than assuming the target UART caused the fault.</li></ul>
+        <h2>No received data</h2><ul><li>Confirm target and UARTee share ground.</li><li>Verify transmit and receive are crossed and match the revision pinout.</li><li>Confirm baud, stop, parity, and voltage settings.</li><li>Check that the active mode grants receive ownership to the open USB port.</li></ul>
+        <h2>Data is incomplete or corrupt</h2><p>Confirm baud and clock behavior, then check the target for flow-control assumptions. Distinguish USB host timing, UARTee firmware buffering, target output, and line-level wiring errors before changing configuration.</p>
+      </article>
+      <nav class="page-nav"><a href="firmware-updates.html"><span>Previous</span><strong>Firmware updates</strong></a><a href="specifications.html"><span>Next</span><strong>Specifications</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

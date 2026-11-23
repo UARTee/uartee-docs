@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Wiring and safety - UARTee Documentation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar><p class="sidebar-heading">Documentation</p><nav><a href="index.html">Overview</a><a href="getting-started.html">Getting started</a><a class="active" href="wiring-safety.html">Wiring and safety</a><a href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a href="firmware-updates.html">Firmware updates</a><a href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a href="mcp-integration.html">MCP integration</a></nav><div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div></aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / Wiring and safety</p><p class="eyebrow">02 / Safety</p><h1>Wiring and safety</h1><p class="lede">Use only the pinout and electrical limits for the exact UARTee hardware revision.</p>
+      <article class="page-content">
+        <div class="notice"><strong>Important limits</strong>UARTee is not an RS-232 adapter and does not provide galvanic isolation. It also uses a shared ground unless a future revision documents otherwise.</div>
+        <h2>Before applying power</h2><ul><li>Confirm target logic voltage against the revision-specific pinout.</li><li>Do not connect RS-232, RS-485, industrial, or mains-level signals directly.</li><li>Check common-ground continuity before energizing both sides.</li><li>Observe the documented power-source and power-sequencing limits.</li><li>Use current limiting and protection for temporary or unfamiliar equipment.</li></ul>
+        <h2>Signal connections</h2><p>A released board diagram will show UART A and UART B numbering, transmit and receive direction, ground, and any optional control signals.</p>
+        <div class="code">TX  →  target RX<br>RX  ←  target TX<br>GND ↔  target GND</div>
+        <p>Do not infer direction from connector position or a previous prototype revision.</p>
+      </article>
+      <nav class="page-nav"><a href="getting-started.html"><span>Previous</span><strong>Getting started</strong></a><a href="connection-modes.html"><span>Next</span><strong>Connection modes</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Getting started - UARTee Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar>
+      <p class="sidebar-heading">Documentation</p>
+      <nav><a href="index.html">Overview</a><a class="active" href="getting-started.html">Getting started</a><a href="wiring-safety.html">Wiring and safety</a><a href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a href="firmware-updates.html">Firmware updates</a><a href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a href="mcp-integration.html">MCP integration</a></nav>
+      <div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div>
+    </aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / Getting started</p><p class="eyebrow">01 / Start</p><h1>Getting started</h1>
+      <p class="lede">Identify the exact board and firmware revision before connecting UARTee to a target.</p>
+      <article class="page-content">
+        <div class="notice"><strong>Before the first connection</strong>UARTee is in development. Package contents, operating systems, firmware, and tested host configurations will be published with a released hardware revision.</div>
+        <h2>Checklist</h2>
+        <ul><li>Identify the board revision printed on the PCB or enclosure.</li><li>Match the firmware build to that exact revision.</li><li>Confirm target logic voltage and ground connection.</li><li>Verify USB cable and host port availability.</li><li>Start with the documented default mode and serial settings.</li></ul>
+        <h2>First connection</h2>
+        <p>Connect USB to the host, ground the UARTee and target together, then connect only the transmit, receive, and ground signals defined for the selected revision.</p>
+        <div class="code">Host USB  →  UARTee  →  Target UART<br>USB GND    ↔  Target GND</div>
+        <p>Open a serial terminal only after the host enumerates UARTee and the port ownership for the selected mode is known.</p>
+      </article>
+      <nav class="page-nav"><a href="index.html"><span>Previous</span><strong>Documentation overview</strong></a><a href="wiring-safety.html"><span>Next</span><strong>Wiring and safety</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

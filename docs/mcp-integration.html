@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>MCP integration - UARTee Documentation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar><p class="sidebar-heading">Documentation</p><nav><a href="index.html">Overview</a><a href="getting-started.html">Getting started</a><a href="wiring-safety.html">Wiring and safety</a><a href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a href="firmware-updates.html">Firmware updates</a><a href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a class="active" href="mcp-integration.html">MCP integration</a></nav><div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div></aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / MCP integration</p><p class="eyebrow">08 / Optional</p><h1>MCP integration</h1><p class="lede">AI tooling is a possible companion, never a requirement for UARTee to function.</p>
+      <article class="page-content">
+        <div class="notice"><strong>Optional host feature</strong>An MCP integration is not published until host setup, permissions, device ownership, and safety boundaries are tested.</div>
+        <h2>Recommended boundaries</h2><ul><li>Normal terminal and script access remains independent of AI tools.</li><li>Host software must not claim device state that it cannot observe.</li><li>Serial writes should require clear user intent and an auditable action.</li><li>No cloud account or background service is required for baseline UART use.</li><li>Production tooling must retain a manual and deterministic fallback.</li></ul>
+        <h2>Safety</h2><p>Any integration will identify affected ports and prohibit actions outside its explicitly tested scope. It must not promise to diagnose target hardware or prevent electrical damage.</p>
+      </article>
+      <nav class="page-nav"><a href="specifications.html"><span>Previous</span><strong>Specifications</strong></a><a href="index.html"><span>Next</span><strong>Documentation overview</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

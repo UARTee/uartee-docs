@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Connection modes - UARTee Documentation</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+  <header class="topbar"><a class="brand" href="index.html"><span class="brand-mark">U</span><span>UART<em>ee</em> <span style="color:var(--muted);font-weight:500">Docs</span></span></a><div></div><div class="top-actions"><a href="https://github.com/UARTee">GitHub ↗</a><button class="menu-button" type="button" aria-label="Open navigation" data-menu-button>☰</button></div></header>
+  <div class="docs-shell">
+    <aside class="sidebar" data-sidebar><p class="sidebar-heading">Documentation</p><nav><a href="index.html">Overview</a><a href="getting-started.html">Getting started</a><a href="wiring-safety.html">Wiring and safety</a><a class="active" href="connection-modes.html">Connection modes</a><a href="configuration.html">Configuration</a><a href="firmware-updates.html">Firmware updates</a><a href="troubleshooting.html">Troubleshooting</a><a href="specifications.html">Specifications</a><a href="mcp-integration.html">MCP integration</a></nav><div class="sidebar-status"><strong>IN DEVELOPMENT</strong><br>Release claims are revision-specific.</div></aside>
+    <main class="content">
+      <p class="breadcrumb">UARTee / Connection modes</p><p class="eyebrow">03 / Modes</p><h1>Connection modes</h1><p class="lede">Choose the routing behavior that matches the bench task.</p>
+      <article class="page-content">
+        <h2>Dual</h2><p>Expose two independent UART channels through one USB connection. A host terminal or application can communicate with each target independently, subject to tested firmware behavior.</p>
+        <h2>Share</h2><p>Make one UART's received data visible on two USB serial ports. The control port owns transmit and receive behavior; the monitor port is read-only for received data.</p>
+        <h2>Tap</h2><p>Actively forward traffic between two UART devices while exposing each received direction on a separate USB serial port.</p>
+        <div class="notice"><strong>Tap is not passive probing</strong>The Tap mode requires firmware forwarding and does not provide electrical isolation or guarantee transparent timing behavior.</div>
+        <h2>Port ownership</h2><p>USB port names, enumeration order, and assignment can vary by host. A released guide will identify the exact USB descriptors and ownership behavior for each firmware build.</p>
+      </article>
+      <nav class="page-nav"><a href="wiring-safety.html"><span>Previous</span><strong>Wiring and safety</strong></a><a href="configuration.html"><span>Next</span><strong>Configuration</strong></a></nav>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
